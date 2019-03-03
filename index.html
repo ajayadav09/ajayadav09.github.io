@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -46,10 +46,10 @@
                     <h2 class="f-regular-title text-center">Breaking News, News Coverage, Current Events & More</h2>
                     <div class="row cta-wrap">
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <p class="grey">Install NewsTrackr to access the latest local, national and world news directly on your new tab aling with web search</p>
+                        <p class="grey">Install <strong>NewsTrackr</strong> to access the latest local, national and world news directly on your new tab aling with web search</p>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <button class="button cta-button cta-button-primary f-bold">CONTINUE &rarr;</button>
+                        <button class="button cta-button cta-button-primary f-bold" data-toggle="modal" data-target="#ctaModal">CONTINUE &rarr;</button>
                       </div>
                     </div>
                   </div>
@@ -98,17 +98,17 @@
                 <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-xs-12">
                   <div class="row">
                       <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                        <div class="share w-100 text-center" >  
+                        <div class="share w-100 text-center to-zoom" >  
                           <span><img src="./img/share.png" alt="" title=""/></span>
                           <h4 class="mt25">Share or Bookmark News Articles</h4>
                           <p class="grey mt15">With infinite news reports released daily, you’re bound to miss important information. For when you don’t have the time
-                          to read full articles, NewsTrackr allows you to bookmark articles you would want to read at leisure.. You can also share
+                          to read full articles, <strong>NewsTrackr</strong> allows you to bookmark articles you would want to read at leisure.. You can also share
                           articles online.</p>
                           <button class="button cta-button cta-button-secondary f-bold mt25">CONTINUE</button>
                         </div>
                       </div>
                       <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="screen-wrap">
+                        <div class="screen-wrap to-zoom">
                           <img class="img-responsive" src="./img/right-screen.png"/>
                         </div>
                       </div>
@@ -122,24 +122,24 @@
                 <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 col-xs-12">
                   <div class="row news-article-wrap">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <div class="news-article">
+                      <div class="news-article to-zoom1">
                         <div class="article-thumbnail left-article"> </div>
                         <h4 class="f-bold mt25">
                           Watch<br> News Coverage
                         </h4>
-                        <p class="grey mt25">Want to catch up on world events? Stay updated stories from across the globe. By adding NewsTrackr to your New Tab, you
+                        <p class="grey mt25">Want to catch up on world events? Stay updated stories from across the globe. By adding <strong>NewsTrackr</strong> to your New Tab, you
                         can stream live news stories and watch news videos conveniently</p>
                         <button class="button cta-button cta-button-secondary f-bold">CONTINUE</button>
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <div class="news-article">
+                      <div class="news-article to-zoom1">
                         <div class="article-thumbnail right-article"></div>
                         <h4 class="f-bold mt25">
                           Personalized News<br>Recommendations
                         </h4>
                         <p class="grey mt25">
-                          Interested in political news but not entertainment news? NewsTrackr traitors a unique and personalized newsfeed, based
+                          Interested in political news but not entertainment news? <strong>NewsTrackr</strong> traitors a unique and personalized newsfeed, based
                           on your interests and preferences. Discover quality content from around the web.
                         </p>
                         <button class="button cta-button cta-button-secondary f-bold">CONTINUE</button>
@@ -152,7 +152,7 @@
                 <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12">
                     <div class="w-100 text-center">
                       <img class="img-responsive" src="./img/news_icon.png" />
-                      <h4 class="mt25">Add NewsTrackr To Your New Tab Now!</h4>
+                      <h4 class="mt25">Add <strong>NewsTrackr</strong> To Your New Tab Now!</h4>
                       <p class="grey">Free installation.<br>No settings or customizations required.</p>
                       <button class="button cta-button cta-button-primary f-bold mt25">CONTINUE &rarr;</button>
                     </div>
@@ -181,8 +181,20 @@
                 <p class="mt25">All trademarks are the property of their respective owners. No affiliation or endorsement is intended or implied.</p>
               </div>
             </div>
+            <div id="scrollToTop" class="scroll-to-top" onclick="topFunction()"><span>&#8593;</span></div>
           </div>
         </footer>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="ctaModal" tabindex="-1" role="dialog" aria-labelledby="ctaModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <p id="modalText">Thank You for Downloading.</p>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
