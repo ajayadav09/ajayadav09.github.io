@@ -54,8 +54,8 @@ if (isChrome || isSafari) {
 } else if (isEdge) {
   $("#ctaModal .modal-dialog").addClass("modal-bottom-center");
 } else {
-  console.log("Final else");
   $("#ctaModal .modal-dialog").addClass("");
+  $("#ctaModal #modalText").text("Browser Not Supported");
 }
 
 window.onscroll = function () { scrollFunction() };
@@ -76,7 +76,6 @@ function checkPositon(element){
   var top_of_screen = $(window).scrollTop();
 
   if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-    // the element is visible, do something
     $(element).addClass("zoom-in-element");
   } else {
     // the element is not visible, do something else
